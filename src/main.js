@@ -5,24 +5,29 @@ import store from './store/index'
 import VueRouter from 'vue-router'
 Vue.use(VueRouter)
 
-// require("!style!css!less!./assets/css/main.less");
+require('!style-loader!css-loader!less-loader!./assets/css/main.less');
 
 
 import index from './pages/index.vue'
 import creat from './pages/creat.vue'
+import creatSelet from './pages/creatSelet.vue'
 
 const router=new VueRouter({
 	mode:'history',
 	base:__dirname,
 	routes:[
 		{path:'/',component:index},
-		{path:'/creat',component:creat}
+		{path:'/creat',component:creat},
+    {path:'/creatSelet',component:creatSelet}
 	]
 })
 
 /* eslint-disable no-new */
 var vm=new Vue({
   router,
+  data:{
+    examTime:'2017-6-17'
+  },
   store,
   template:`
   		<div>

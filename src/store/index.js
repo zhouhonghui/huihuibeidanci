@@ -3,7 +3,7 @@ import Vuex from 'vuex'
 Vue.use(Vuex)
 
 var state={
-	newbi:'1'
+	newbi:'0'
 }
 
 // var state,xmlhttp

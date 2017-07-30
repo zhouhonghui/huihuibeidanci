@@ -16,6 +16,16 @@ export default {
 <style lang="less" scoped>
 @import '../assets/css/var.less';
 #header-lg{
-  
+  padding:50px 30px;
+  background:@green;
+}
+h3{
+	font-size:1.8rem;
+	color:#fff;
+	padding-bottom:15px;
+}
+h4{
+	font-size:1.5rem;
+	color:#fff;
 }
 </style>
